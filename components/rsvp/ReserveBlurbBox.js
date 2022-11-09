@@ -28,7 +28,7 @@ export default function ReserveBlurbBox({
         onMouseLeave={() => setHover(false)}
         className={styles.email}
       >
-        shannonandanthony@outlook.com.
+        shannonandanthony2023@gmail.com.
         <div className={hover ? styles.lineShow : styles.lineHidden} />
       </a>
     </div>
