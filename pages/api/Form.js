@@ -20,7 +20,7 @@ export default async (req, res) => {
   `;
 
   const data = {
-    to: 'shannonandanthony@outlook.com',
+    to: 'shannonandanthony2023@gmail.com',
     from: 'shannonandanthony@outlook.com',
     subject: `Wedding RSVP from ${body.firstName} ${body.lastName}`,
     text: message,
