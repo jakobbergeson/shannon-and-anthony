@@ -23,7 +23,7 @@ export default function ReserveBlurbBox({
         {paragraph}
       </p>
       <a
-        href='mailto: shannonandanthony@outlook.com'
+        href='mailto: shannonandanthony2023@gmail.com'
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         className={styles.email}
