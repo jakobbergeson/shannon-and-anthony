@@ -23,12 +23,12 @@ export default function ReserveBlurbBox({
         {paragraph}
       </p>
       <a
-        href='mailto: shannonandanthony2023@gmail.com'
+        href='mailto: shannonandanthony@outlook.com'
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         className={styles.email}
       >
-        shannonandanthony2023@gmail.com.
+        shannonandanthony@outlook.com.
         <div className={hover ? styles.lineShow : styles.lineHidden} />
       </a>
     </div>
