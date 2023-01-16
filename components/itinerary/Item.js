@@ -23,11 +23,11 @@ export default function Item({
         >
           {header}
         </p>
-        <p
+        <div
           className={styles.paragraph}
         >
           {paragraph}
-        </p>
+        </div>
       </div>
     </div>
   );

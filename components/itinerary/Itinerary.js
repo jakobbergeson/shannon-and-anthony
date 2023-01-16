@@ -5,12 +5,16 @@ import Icon from '../../public/icon.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import styles from '../../styles/Itinerary.module.css';
+import { useState } from 'react';
 
 import { Pagination } from "swiper";
 
 export default function Itinerary({
   children
 }) {
+
+  const [hoverD, setHoverD] = useState(false);
+  const [hoverL, setHoverL] = useState(false);
 
   var menu = ['Itinerary', 'Menu', 'Rules'];
 
@@ -24,8 +28,8 @@ export default function Itinerary({
   ];
 
   var food = [
-    { time: 'Lunch', header: 'All you can eat tacos', paragraph: '' },
-    { time: 'Dessert', header: 'Cupcakes :3', paragraph: '' }
+    { time: 'Lunch', header: 'All you can eat tacos', paragraph: <a style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} href="https://miranchosupermarket.com/" target='_blank' rel='noreferrer' onMouseOver={() => setHoverL(true)} onMouseLeave={() => setHoverL(false)}>Mi Rancho Market <div className={hoverL ? styles.lineShow : styles.lineHidden} /> </a> },
+    { time: 'Dessert', header: 'Cupcakes :3', paragraph: <a style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} href="https://doublezerosd.wixsite.com/home" target='_blank' rel='noreferrer' onMouseOver={() => setHoverD(true)} onMouseLeave={() => setHoverD(false)}>Double Zero <div className={hoverD ? styles.lineShow : styles.lineHidden} /> </a> }
   ];
 
   var rules = [
